@@ -65,6 +65,7 @@ main .main-inner .top-wrapper .top-right {
 }
 
 main .main-inner .top-wrapper .top-left {
+  width: 48%;
   margin: 204px 0 243px;
 }
 
@@ -450,6 +451,7 @@ footer .small {
     margin: 10px 0 0;
   }
   main .main-inner .top-wrapper .top-left {
+    width: 100%;
     margin: 10px 0 100px;
   }
   main .main-inner .top-wrapper .top-left p {
