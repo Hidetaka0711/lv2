@@ -166,13 +166,13 @@ main {
                   width: 200px;
                   margin: 109px 0 30px;
                 }
-
-                figcaption {
-                  font-size: 20px;
-                  font-weight: bold;
-                  text-align: center;
-                }
             }
+            figcaption {
+              font-size: 20px;
+              font-weight: bold;
+              text-align: center;
+            }
+
         }
 
     }// ---------------------------------------  service ----------
@@ -216,6 +216,10 @@ main {
               width:  47.87234%;
               height: auto;
               box-shadow: 3px 3px 10px #00000029;
+
+              img {
+                vertical-align: bottom;
+              }
             }
             .about-content {
               width: 47.87234%;
@@ -232,6 +236,7 @@ main {
                 border-radius: 24px;
                 margin-top: 30px;
                 display: inline-block;
+                box-shadow: 3px 3px 10px #00000029;
               }
             }
 
@@ -247,10 +252,7 @@ main {
               box-shadow: 3px 3px 10px #00000029;
 
                 img {
-                  // width: auto;
-                  height: auto;
-                  max-width: 100%;
-                  // max-height: 100%;
+                  display: block;
                 }
             }
             .about-content {
@@ -350,7 +352,7 @@ main {
               .time2 {
                 font-size: 16px;
                 // line-height: 27px;
-                padding: 36px 28px 10px 0;
+                padding: 36px 28px 19px 0;
                 display: inline-block;
                 font-weight: bold;
               }
@@ -413,19 +415,22 @@ main {
 footer {
   height: 140px;
   background-color: #E8E8E8;
+
   .footer-inner {
     width: 1080px;
     max-width: 100%;
     margin: 0 auto;
-    position: relative;
+    display: flex;
+    flex-direction: column;
     
      .flex {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        padding: 25px 0 12px;
 
       .footer-logo {
         width: 70px;
-        margin: 25px 0 40px;
       }
 
       nav {
@@ -437,10 +442,6 @@ footer {
                 padding: 0 18px;
                 border-right: 1px solid #333; 
                 font-size: 14px;
-                margin-top: 50px;
-                  a {
-                    text-decoration: none;
-                  }
                   &:nth-last-child(1) {
                     border: 0;
                     padding: 0 0 0 18px;
@@ -449,31 +450,23 @@ footer {
           }
       }
     }
+
     .small {
-      text-align: center;
       margin: 0 auto;
       font-size: 14px;
       font-weight: 500;
-      display: block;
-      position: absolute;
-      bottom: 14px;
-      left: 50%;
-      transform : translate(-50%,-50%);
     }  
   }// --------  inner ------ 
 }// ---------------------------------------  footer ----------
 
 
 // ---------------------------------------------------------  max-1080 ----------
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1079px) {
 
     header {
 
         .header-inner {
           width: 92%;
-            .header-logo img {
-              
-            }
         }
       
     }//-----------------------header-----
@@ -485,7 +478,12 @@ footer {
 
             .top-wrapper {
 
+                .top-right {
+                  margin: 6.66vw 0 10vw;
+                }
+
                 .top-left {
+                  margin: 17vw 0 20.25vw;
 
                     .catch-title {
                       font-size: 3vw;
@@ -500,9 +498,22 @@ footer {
                       font-size: 1.5vw;
                     }
                 }
+            }// ----------------top-wrapper 
+
+            .service {
+
+              .section-title {
+                font-size: 5vw;
+              }
+
             }
+          
 
             .about {
+              .section-title {
+                font-size: 5vw;
+              }
+
                 .about-section {
                     .about-content {        
                         font-size: 1.30vw;
@@ -538,6 +549,9 @@ footer {
             }//--------------------about-----
             
             .news {
+              .section-title {
+                font-size: 5vw;
+              }
               article {
                 .news-image {
                   padding: 1.5vw 0;
@@ -550,7 +564,7 @@ footer {
                   }
                   .time2 {
                     font-size: 1.4vw;
-                    padding: 3vw 2.5vw 1vw 0;  
+                    padding: 3vw 2.5vw 1.5vw 0;  
                   }
                   .time3 {
                     font-size: 1.4vw;
@@ -581,13 +595,14 @@ footer {
         .footer-inner {
           width: 92%;
             .flex {
+              padding: 6vh 0 6vh;
               .footer-logo {
-                width: 6.5vw; 
+                width: 18.5vh;
               }    
               nav {
                 ul {
                   li {
-                    font-size: 1.2vw;
+                    font-size: 3vh;
                     padding: 0 1.5vw;
 
                     &:nth-last-child(1) {
@@ -599,21 +614,12 @@ footer {
             }
 
             .small {
-              font-size: 1.2vw;
-              bottom: 1.2vw;
+              font-size: 3vh;
             }
         }//-----------------------inner-----
     }//-----------------------footer-----
 
-
-  
-}
-
-
-
-
-
-// ---------------------------------------------------------  max-768 ----------
+}// ---------------------------------------------------------  max-768 ----------
 @media screen and (max-width: 768px) {
 
   header {
@@ -650,7 +656,7 @@ footer {
 
           .top-left {
             width: 100%;
-            margin: 10px 0 100px;
+            margin: 1.3vw 0 26vw;
 
               .catch-title {
                 font-size: 8vw;
@@ -677,6 +683,7 @@ footer {
                 margin: 0 auto 15px;
                 padding: 4% 8%;
                 font-size: 4.4vw;
+                border-radius: 8vw;
               }
               .top-document {
                 width: 59%;
@@ -685,6 +692,7 @@ footer {
                 margin: 0 auto;
                 padding: 4% 8%;
                 font-size: 4.4vw;
+                border-radius: 8vw;
               }
           }
       }
@@ -693,7 +701,7 @@ footer {
 
         .section-title {
           width: 100%;
-          // font-size: 28px;
+          font-size: 7vw;
           justify-content: space-between;
 
             &:before, &:after {
@@ -718,17 +726,14 @@ footer {
               margin-top: 80px;
             }  
             img {
+              width: 53%;
               margin: 0 0 30px 0;
             }
-
-
-            figcaption {
-              font-size: 20px;
-              padding-bottom: 50px;
-            }
-
           }
-
+          figcaption {
+            font-size: 5.3vw;
+            padding-bottom: 50px;
+          }
         }
       } 
 
@@ -737,7 +742,7 @@ footer {
 
         .section-title {
           width: 100%;
-          // font-size: 28px;
+          font-size: 7vw;
           justify-content: space-between;
 
           &:before, &:after {
@@ -777,8 +782,8 @@ footer {
             a {
               font-size: 4.8vw;
               padding: 4vw 15vw;
-              border-radius: 5.4vw;
-              margin: 30px 0 100px;
+              border-radius: 15vw;
+              margin: 8vw 0 18vw;
             }
 
           }
@@ -820,8 +825,8 @@ footer {
             a {
               font-size: 4.8vw;
               padding: 4vw 15vw;
-              border-radius: 5.4vw;
-              margin: 30px 0 100px;
+              border-radius: 15vw;
+              margin: 8vw 0 26vw;
             }
           }
         }
@@ -833,7 +838,7 @@ footer {
 
         .section-title {
           width: 100%;
-          // font-size: 28px;
+          font-size: 7vw;
           justify-content: space-between;
 
           &:before, &:after {
@@ -890,10 +895,10 @@ footer {
 
             span {
               margin: 0 auto;
-              font-size: 4vw;
+              font-size: 3.5vw;
               font-weight: bold;
-              padding: 6px 6.13%;
-              border-radius: 2vw;
+              padding: 1.2vw 5.2vw;
+              border-radius: 15vw;
             }
             p {
               padding: 2vw 0;
@@ -903,6 +908,7 @@ footer {
               font-size: 4.3vw;
               line-height: 7vw;
               font-weight: bold;
+              padding-top: 4vw;
             }
             .thin {
               width: 100%;
@@ -920,7 +926,7 @@ footer {
             margin-top: 50px;
             font-size: 4.8vw;
             padding: 4vw 15vw;
-            border-radius: 5.4vw;
+            border-radius: 15vw;
             margin: 14vw 0 28vw;
           }
         }
@@ -933,17 +939,14 @@ footer {
 
   footer {
     height: 289px;
-    text-align: center;
     .footer-inner {
-      text-align: center;
         .flex {
-          display: flex;
           flex-direction: column;
+          padding: 0;
 
             .footer-logo {
               width: 70px;
-              margin: 30px auto 23px;
-              // margin: 6vw auto 5vw;
+              margin: 8vh auto 5vh;
               display: inline-block;
             }
 
@@ -952,27 +955,24 @@ footer {
               ul {
                 text-align: center;
                 li {
+                  font-size: 4vh;
                   display: block;
-                  padding-bottom: 12px;
+                  padding-bottom: 3.5vh;
                   border: 0;
                   margin: 0;
                   &:nth-last-child(1) {
                     border: 0;
-                    padding-bottom: 40px;
+                    padding-bottom: 10vh;
                   }
                 }
               }
             }
         }
         .small {
-          text-align: center;
-          font-size: 1.3vw;
+          font-size: 4vh;
           font-weight: 500;
           display: inline-block;
-          position: static;
-          transform : none;
-        }
-        
+        }       
     }
 
     
