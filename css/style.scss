@@ -25,7 +25,7 @@ img {
 
 
 header {
-  height: 70px;
+  // height: 70px;
 
   .header-inner {
     width: 1080px;
@@ -413,7 +413,7 @@ main {
 }// ---------------------------------------  main ----------
 
 footer {
-  height: 140px;
+  // height: 140px;
   background-color: #E8E8E8;
 
   .footer-inner {
@@ -434,7 +434,7 @@ footer {
       }
 
       nav {
-        width: 70%;
+        // width: 70%;
           ul {
            text-align: right;
               li {
@@ -442,6 +442,10 @@ footer {
                 padding: 0 18px;
                 border-right: 1px solid #333; 
                 font-size: 14px;
+
+                  &:first-of-type {
+                    padding-left: 0;
+                  }
                   &:nth-last-child(1) {
                     border: 0;
                     padding: 0 0 0 18px;
@@ -455,6 +459,7 @@ footer {
       margin: 0 auto;
       font-size: 14px;
       font-weight: 500;
+      padding-bottom: 14px;
     }  
   }// --------  inner ------ 
 }// ---------------------------------------  footer ----------
@@ -503,7 +508,7 @@ footer {
             .service {
 
               .section-title {
-                font-size: 5vw;
+                font-size: 4vw;
               }
 
             }
@@ -511,7 +516,7 @@ footer {
 
             .about {
               .section-title {
-                font-size: 5vw;
+                font-size: 4vw;
               }
 
                 .about-section {
@@ -550,7 +555,7 @@ footer {
             
             .news {
               .section-title {
-                font-size: 5vw;
+                font-size: 4vw;
               }
               article {
                 .news-image {
@@ -595,18 +600,21 @@ footer {
         .footer-inner {
           width: 92%;
             .flex {
-              padding: 6vh 0 6vh;
+              padding: 2.5vw 0 1.2vw;
+              // padding: 2.717391% 0 1.304348%;
               .footer-logo {
-                width: 18.5vh;
+                width: 7vw;
+                // width: 7.608696%;
               }    
               nav {
+                
                 ul {
                   li {
-                    font-size: 3vh;
-                    padding: 0 1.5vw;
+                    font-size: 1.4vw;
+                    padding: 0 1.8vw;
 
                     &:nth-last-child(1) {
-                        padding: 0 0 0 1.5vw;
+                        padding: 0 0 0 1.8vw;
                     }
                   }
                 }
@@ -614,7 +622,8 @@ footer {
             }
 
             .small {
-              font-size: 3vh;
+              font-size: 1.4vw;
+              padding-bottom: 1.4vw;
             }
         }//-----------------------inner-----
     }//-----------------------footer-----
@@ -938,7 +947,7 @@ footer {
 
 
   footer {
-    height: 289px;
+    // height: 289px;
     .footer-inner {
         .flex {
           flex-direction: column;
@@ -946,7 +955,8 @@ footer {
 
             .footer-logo {
               width: 70px;
-              margin: 8vh auto 5vh;
+              margin: 30px 0 23px;
+              // margin: 8vh auto 6vh;
               display: inline-block;
             }
 
@@ -955,23 +965,24 @@ footer {
               ul {
                 text-align: center;
                 li {
-                  font-size: 4vh;
+                  font-size: 14px;
                   display: block;
-                  padding-bottom: 3.5vh;
+                  padding-bottom: 12px;
                   border: 0;
                   margin: 0;
                   &:nth-last-child(1) {
                     border: 0;
-                    padding-bottom: 10vh;
+                    padding-bottom: 40px;
                   }
                 }
               }
             }
         }
         .small {
-          font-size: 4vh;
+          font-size: 14px;
           font-weight: 500;
           display: inline-block;
+          padding-bottom: 14px;
         }       
     }
 
